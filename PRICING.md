@@ -30,7 +30,7 @@ Si un modelo aparece sin tarifa, el dashboard lo avisa en el pie en vez de inven
 
 Las correspondencias M50/M264/M322 son estimadas a partir del registro documentado por Antigravity Context Window Monitor, que advierte que los identificadores pueden reasignarse. Las tarifas promocionales de Gemini 3.6/3.8 vencen el 31 de diciembre de 2026: para actividad posterior hay que revisar el precio oficial. No se infiere costo eléctrico de los modelos locales.
 
-El recolector calcula tarifas por evento. Verificación con un ejemplo: 2.938.665 tokens de entrada sin caché × $2/M + 356.825 de salida × $10/M + 87.418.368 de lectura de caché × $0,10/M = $18,19.
+El recolector calcula tarifas por evento, no sobre el total. Con tarifas de Sonnet, una sesión de 1.000.000 tokens de entrada sin caché × $2/M + 200.000 de salida × $10/M + 50.000.000 de lectura de caché × $0,10/M da $2 + $2 + $5 = $9. Notá el peso de la lectura de caché: es la tarifa más baja y suele ser igual el renglón más grande.
 
 ## Fuentes
 
