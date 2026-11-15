@@ -4,10 +4,28 @@ Un dashboard local para ver, en un solo lugar, **todo lo que consumís con agent
 
 Corre en tu Mac, lee archivos que ya están en tu disco y **no manda nada a ningún servidor**.
 
+![El dashboard en modo claro](demo/img/dashboard-claro.png)
+
 ```
 ./install.sh    # una vez
 ./start.sh      # http://localhost:8934
 ```
+
+### Probalo sin instalar nada
+
+```bash
+git clone https://github.com/axellaban/straude-dashboard.git
+cd straude-dashboard && ./demo.sh
+```
+
+Abre el dashboard con datos inventados. No necesita ccusage, ni Node, ni que tengas historial de uso: es para ver si te sirve antes de conectarlo a tus datos.
+
+<details>
+<summary>Modo oscuro</summary>
+
+![El dashboard en modo oscuro](demo/img/dashboard-oscuro.png)
+
+</details>
 
 ---
 
@@ -176,6 +194,17 @@ Necesitás el extractor opcional: volvé a correr `./install.sh` y aceptá el pa
 Son carpetas distintas. Unificalas con un alias en `config.json`.
 
 ---
+
+## Si querés tocarlo
+
+```bash
+python3 tests/smoke_test.py    # levanta el server con datos falsos y chequea las rutas
+python3 demo/make_demo.py      # regenera los datos de demo (deterministas, semilla fija)
+```
+
+El test no necesita ccusage ni historial, así que corre en cualquier máquina. Los datos de demo se calculan con las tarifas reales de `pricing_sources.json`, así que los números cierran si los verificás a mano.
+
+Las piezas: `extract_data.py` arma el dataset, `project_sessions.py` consolida y aplica alias, `template.html` es todo el frontend en un archivo (sin build, sin dependencias), `server.py` lo sirve y lo refresca, `config.py` lee tu `config.json`.
 
 ## Licencia
 
