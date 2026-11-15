@@ -1,0 +1,112 @@
+{
+  "verifiedAt": "2026-10-05",
+  "currency": "USD",
+  "unit": "per million tokens",
+  "basis": "API standard equivalent, not subscription charges",
+  "models": {
+    "gpt-6.1-sol": {
+      "pricingModel": "gpt-6.1-sol",
+      "source": "https://developers.openai.com/api/docs/models/gpt-6.1-sol",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 2.0,
+        "outputCostPerToken": 10.0,
+        "cacheCreationInputTokenCost": 2.5,
+        "cacheReadInputTokenCost": 0.1
+      },
+      "status": "standard-api"
+    },
+    "claude-opus-5-5": {
+      "pricingModel": "claude-opus-5-5",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 4.0,
+        "outputCostPerToken": 20.0,
+        "cacheCreationInputTokenCost": 5.0,
+        "cacheReadInputTokenCost": 0.2
+      },
+      "status": "standard-api"
+    },
+    "claude-sonnet-5-5": {
+      "pricingModel": "claude-sonnet-5-5",
+      "source": "https://platform.claude.com/docs/en/about-claude/pricing",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 2.0,
+        "outputCostPerToken": 10.0,
+        "cacheCreationInputTokenCost": 2.5,
+        "cacheReadInputTokenCost": 0.2
+      },
+      "status": "standard-api"
+    },
+    "big-pickle": {
+      "pricingModel": "big-pickle",
+      "source": "https://opencode.ai/docs/zen/",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "status": "free"
+    },
+    "mlx-community/Qwen3-14B-4bit": {
+      "pricingModel": "mlx-community/Qwen3-14B-4bit",
+      "source": "local OpenCode message.providerID=mlx-local; endpoint http://localhost:8080/v1",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "status": "local"
+    },
+    "mlx-community/Qwen2.5-14B-Instruct-4bit": {
+      "pricingModel": "mlx-community/Qwen2.5-14B-Instruct-4bit",
+      "source": "local OpenCode message.providerID=mlx-local; endpoint http://localhost:8080/v1",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "status": "local"
+    },
+    "model_placeholder_m50": {
+      "pricingModel": "gemini-3.1-flash-lite",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.25,
+        "outputCostPerToken": 1.5,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.025
+      },
+      "status": "estimated-alias",
+      "aliasSource": "https://github.com/AGI-is-going-to-arrive/Antigravity-Context-Window-Monitor/blob/main/README.md"
+    },
+    "model_placeholder_m264": {
+      "pricingModel": "gemini-3.6-flash",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.75,
+        "outputCostPerToken": 3.75,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.075
+      },
+      "status": "estimated-alias",
+      "aliasSource": "https://github.com/AGI-is-going-to-arrive/Antigravity-Context-Window-Monitor/blob/main/README.md",
+      "rateValidThrough": "2026-12-31"
+    },
+    "model_placeholder_m322": {
+      "pricingModel": "gemini-3.8-flash",
+      "source": "https://ai.google.dev/gemini-api/docs/pricing",
+      "ratesUSDPerMillion": {
+        "inputCostPerToken": 0.75,
+        "outputCostPerToken": 3.75,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.075
+      },
+      "status": "estimated-alias",
+      "aliasSource": "https://github.com/AGI-is-going-to-arrive/Antigravity-Context-Window-Monitor/blob/main/README.md",
+      "rateValidThrough": "2026-12-31"
+    }
+  }
+}

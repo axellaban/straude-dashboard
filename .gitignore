@@ -1,0 +1,19 @@
+# ---- Datos de uso: TUYOS. Nunca se publican. ----
+data.json
+dashboard.html
+backups/
+
+# ---- Tu configuración local ----
+config.json
+manual_sessions.json
+
+# ---- Entorno del extractor opcional ----
+.venv-chatextract/
+__pycache__/
+*.pyc
+
+# ---- App del launcher, se genera con install.sh ----
+Straude Dashboard.app/
+
+# ---- macOS ----
+.DS_Store

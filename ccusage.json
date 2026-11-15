@@ -1,0 +1,60 @@
+{
+  "defaults": {
+    "pricingOverrides": {
+      "gpt-6.1-sol": {
+        "inputCostPerToken": 2e-06,
+        "outputCostPerToken": 1e-05,
+        "cacheCreationInputTokenCost": 2.5e-06,
+        "cacheReadInputTokenCost": 1.0000000000000001e-07
+      },
+      "claude-opus-5-5": {
+        "inputCostPerToken": 4e-06,
+        "outputCostPerToken": 2e-05,
+        "cacheCreationInputTokenCost": 5e-06,
+        "cacheReadInputTokenCost": 2.0000000000000002e-07
+      },
+      "claude-sonnet-5-5": {
+        "inputCostPerToken": 2e-06,
+        "outputCostPerToken": 1e-05,
+        "cacheCreationInputTokenCost": 2.5e-06,
+        "cacheReadInputTokenCost": 2.0000000000000002e-07
+      },
+      "big-pickle": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "mlx-community/Qwen3-14B-4bit": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "mlx-community/Qwen2.5-14B-Instruct-4bit": {
+        "inputCostPerToken": 0.0,
+        "outputCostPerToken": 0.0,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 0.0
+      },
+      "model_placeholder_m50": {
+        "inputCostPerToken": 2.5e-07,
+        "outputCostPerToken": 1.5e-06,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 2.5000000000000002e-08
+      },
+      "model_placeholder_m264": {
+        "inputCostPerToken": 7.5e-07,
+        "outputCostPerToken": 3.75e-06,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 7.5e-08
+      },
+      "model_placeholder_m322": {
+        "inputCostPerToken": 7.5e-07,
+        "outputCostPerToken": 3.75e-06,
+        "cacheCreationInputTokenCost": 0.0,
+        "cacheReadInputTokenCost": 7.5e-08
+      }
+    }
+  }
+}

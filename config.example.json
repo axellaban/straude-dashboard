@@ -1,0 +1,15 @@
+{
+  "_comment": "Copiá este archivo a config.json y editalo. Todo es opcional: sin config.json el dashboard funciona igual, solo sin agrupar ni destacar proyectos.",
+
+  "port": 8934,
+
+  "projectAliases": {
+    "_comment": "Unifica varias carpetas o cuentas bajo un mismo nombre de proyecto. La clave es el nombre que querés ver; el valor es una expresión regular que se busca (sin distinguir mayúsculas) contra la ruta de la sesión. Ejemplo: todas las carpetas que contengan 'mi-saas' se muestran como 'Mi SaaS'.",
+    "Mi SaaS": "mi-saas",
+    "Cliente X": "clientes/x(?![a-z0-9])"
+  },
+
+  "highlightProject": "Mi SaaS",
+
+  "backgroundIntervalSeconds": 45
+}

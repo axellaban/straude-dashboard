@@ -1,0 +1,51 @@
+{
+  "_comment": [
+    "Copiá este archivo a manual_sessions.json para sumar a mano sesiones que ninguna fuente local puede ver:",
+    "por ejemplo una segunda cuenta de Claude en otra máquina, o trabajo anterior a instalar el dashboard.",
+    "Es opcional: sin este archivo el dashboard muestra solo lo que detecta automáticamente.",
+    "Cada sesión aparece marcada como 'informe manual' para que no se confunda con datos medidos."
+  ],
+
+  "sessions": [
+    {
+      "id": "manual:mi-cuenta-2:mi-proyecto:20260101",
+      "agent": "claude",
+      "group": "Claude",
+      "account": "Claude · 2da cuenta",
+      "accountId": "mi-cuenta-2",
+      "source": "manual-user-report",
+      "title": "Descripción corta de la sesión",
+      "date": "2026-01-01",
+      "startDate": "2026-01-01",
+      "lastActivity": null,
+      "reportedAt": "2026-01-01",
+      "dateBasis": "fecha del informe; última actividad no informada",
+      "project": "Mi SaaS",
+      "projectOriginal": "Mi SaaS · 2da cuenta",
+      "models": [
+        {
+          "model": "claude-opus-5-5",
+          "cost": 0,
+          "inputTokens": 0,
+          "outputTokens": 0,
+          "cacheReadTokens": 0,
+          "cacheCreationTokens": 0,
+          "missingPricing": false
+        }
+      ],
+      "modelsUsed": ["claude-opus-5-5"],
+      "totalCost": 0,
+      "costBasis": "registro informado por el usuario",
+      "tokensApproximate": true,
+      "totalTokens": 0,
+      "inputTokens": 0,
+      "outputTokens": 0,
+      "cacheReadTokens": 0,
+      "cacheCreationTokens": 0
+    }
+  ],
+
+  "projectNotes": {
+    "Mi SaaS": "Nota libre que aparece en el diálogo 'Fuentes y cómo se calcula'. Útil para dejar asentado de dónde salió un dato importado a mano."
+  }
+}

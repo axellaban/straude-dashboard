@@ -1,0 +1,4 @@
+# Solo para el extractor opcional de sesiones remotas (Cowork / Claude Code
+# lanzado desde la app de Escritorio, que no deja rastro en ~/.claude/projects).
+# install.sh lo instala en .venv-chatextract/ para no tocar el Python del sistema.
+ccl-chromium-reader>=0.5
